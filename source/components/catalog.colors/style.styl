@@ -1,0 +1,82 @@
+@import '../../styl/component-include.styl'
+
+.b-catalog-colors
+
+  @media( max-width 767px )
+    margin 0 -20px
+
+    &__button
+      display none
+
+  @media( min-width 768px )
+
+    .swiper-wrapper
+      display flex
+      align-content space-between
+      width calc(100% + 30px)
+
+    &.open .swiper-wrapper
+      flex-wrap wrap
+
+    .swiper-slide
+      width calc( 100% / 6 )
+      height auto
+
+  button
+    min-width 200px
+
+    span:last-child,
+    .open& span:first-child 
+      display none
+
+    .open& span:last-child 
+      display inline-block
+  
+  &__item
+    text-align center
+
+    @media( min-width 768px )
+      margin-right 30px
+      margin-bottom 30px
+
+    @media( max-width 767px )
+      padding 0 15px
+
+    .b-catalog-element__price,
+    .b-catalog-element__title
+      padding-right 0
+      padding-left 0
+
+    .b-catalog-element__title
+      display block
+      overflow hidden
+      max-height 72px
+      min-height auto
+
+    .b-catalog-element__img,
+    .b-catalog-element__img-hover
+      padding-top 50%
+      margin-bottom 30px
+
+  &__img
+    display block
+    background-repeat no-repeat
+    background-position center
+    background-size contain
+    margin-bottom 30px
+    padding-top 50%
+
+  &__title
+    display block
+    text-align center
+    font-size 12px
+    overflow hidden
+    max-height 45px
+
+  &__price
+    display block
+    border-top 1px solid #f2f2f2
+    padding-top 15px
+    margin-top 15px
+    font-size 14pt
+    text-align center

@@ -1,0 +1,39 @@
+extends ./layouts/main.jade
+
+block title
+  title Main page | seller
+
+block content
+
+  .container-fluid
+    
+    hr.i-size-L
+    hr.i-size-L
+    hr.i-size-L
+    
+    h1 Optic Street
+        
+    h2 Шапка
+    ul
+      li
+        a( href="/headers/optic-street/" ) Optic-street
+        
+    h2 Главная
+    ul
+      li
+        a( href="/blocks/stories/" ) Блок Stories
+        
+    h2 Кталог
+    ul
+      li
+        a( href="/catalog/catalog-section/" ) Section
+      li
+        a( href="/catalog/detail/" ) Detail
+      li
+        a( href="/catalog/fullmenu/" ) Full menu
+      li
+        a( href="/catalog/catalog-filter/" ) Filter
+
+    hr
+
+    include ./components/shops/brands
