@@ -81,6 +81,22 @@
   padding 8px 0
   background-color transparent
   border-radius 0
+  white-space nowrap
+  overflow auto
+  scrollbar-color #ccc #fff
+  scrollbar-width thin
+
+  &::-webkit-scrollbar
+      width 4px
+      height 4px
+      background-color #fff
+
+  &::-webkit-scrollbar-thumb
+      background-color #ccc
+      border-radius 2px
+
+  &::-webkit-scrollbar-thumb:hover
+      background-color #c0c0c0
   
   &:last-child
     color: #333 !important
