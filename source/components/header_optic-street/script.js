@@ -256,7 +256,7 @@
   });
 })(jQuery);
 
-window.addEventListener('load', fetchMobileMenu);
+window.addEventListener('DOMContentLoaded', fetchMobileMenu);
 window.addEventListener('resize', fetchMobileMenu);
 window.fetchMobileMenuFlag;
 
